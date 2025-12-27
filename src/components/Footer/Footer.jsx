@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logoImage from '../../assets/logo.png';
 import './Footer.css';
 
@@ -26,7 +27,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">SHOP</h3>
             <ul className="footer-links">
-              <li><a href="#products">All Products</a></li>
+              <li><Link to="/products">All Products</Link></li>
               <li><a href="#seeds">Seeds</a></li>
               <li><a href="#fertilizers">Fertilizers</a></li>
               <li><a href="#pesticides">Pesticides</a></li>
@@ -39,12 +40,12 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">EXPLORE</h3>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Our Story</a></li>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#how-to-use">How to Use</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contacts">Contact</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">Our Story</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
+              <li><Link to="/contacts">Contact</Link></li>
             </ul>
           </div>
 
@@ -109,13 +110,13 @@ const Footer = () => {
           <div className="footer-bottom-links">
             <span>Made with Care</span>
             <span className="separator">|</span>
-            <a href="#terms">Terms</a>
+            <Link to="/terms">Terms</Link>
             <span className="separator">|</span>
-            <a href="#privacy">Privacy</a>
+            <Link to="/privacy">Privacy</Link>
             <span className="separator">|</span>
-            <a href="#shipping">Shipping & Returns</a>
+            <Link to="/shipping">Shipping & Returns</Link>
             <span className="separator">|</span>
-            <a href="#contact">Contact Us</a>
+            <Link to="/contacts">Contact Us</Link>
           </div>
           <div className="footer-copyright">
             <p>&copy; {new Date().getFullYear()} Sri Gangotri Industries. All rights reserved.</p>

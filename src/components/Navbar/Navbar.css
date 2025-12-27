@@ -48,6 +48,7 @@
   align-items: center;
   justify-content: center;
   transition: color 0.2s ease;
+  position: relative;
 }
 
 .icon-btn:hover {
@@ -56,6 +57,32 @@
 
 .icon-btn svg {
   display: block;
+}
+
+.cart-btn-nav {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #9B997B;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.wishlist-btn-nav {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Separator */
@@ -84,6 +111,11 @@
   width: auto;
   object-fit: contain;
   display: block;
+}
+
+.logo-text-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-text {

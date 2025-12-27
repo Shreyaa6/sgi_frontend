@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Products.css';
 
 const Products = () => {
@@ -66,7 +67,7 @@ const Products = () => {
         <div className="products-carousel-wrapper">
           <div className="products-carousel">
             {products.slice(0, 4).map((product) => (
-              <div key={product.id} className="product-card">
+              <Link key={product.id} to={`/product/${product.id}`} className="product-card">
                 <div className="product-image-container">
                   <img src={product.image} alt={product.name} className="product-image" />
                 </div>
@@ -77,18 +78,18 @@ const Products = () => {
                   )}
                   <span className="product-current-price">{product.price}</span>
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
         
         <div className="view-all-products">
-          <a href="#products" className="view-all-link">
+          <Link to="/products" className="view-all-link">
             <span>View all products</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 10L15 10M10 5L15 10L10 15"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

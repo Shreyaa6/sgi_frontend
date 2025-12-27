@@ -1,0 +1,105 @@
+.terms-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FAF8F6;
+}
+
+.terms-page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+.terms-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.terms-page-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #444444;
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+}
+
+.terms-page-subtitle {
+  font-size: 1.25rem;
+  color: #716D64;
+  margin: 0;
+}
+
+.terms-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.terms-section {
+  padding: 32px;
+  border: 1px solid #D1B9B4;
+  background-color: #ffffff;
+}
+
+.terms-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444444;
+  margin: 0 0 16px 0;
+}
+
+.terms-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #716D64;
+  margin: 0 0 16px 0;
+}
+
+.terms-list {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.terms-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #716D64;
+  margin-bottom: 8px;
+}
+
+.terms-contact {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #716D64;
+  margin: 16px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .terms-page-content {
+    padding: 40px 30px 60px;
+  }
+  
+  .terms-page-title {
+    font-size: 2.5rem;
+  }
+  
+  .terms-section {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .terms-page-content {
+    padding: 30px 20px 40px;
+  }
+  
+  .terms-page-title {
+    font-size: 2rem;
+  }
+  
+  .terms-section {
+    padding: 20px;
+  }
+}
+

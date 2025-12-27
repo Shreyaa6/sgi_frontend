@@ -46,6 +46,8 @@
   flex-direction: column;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-image-container {

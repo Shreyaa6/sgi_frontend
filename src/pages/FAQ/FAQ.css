@@ -1,0 +1,151 @@
+.faq-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FAF8F6;
+}
+
+.faq-page-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+.faq-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq-page-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #444444;
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+}
+
+.faq-page-subtitle {
+  font-size: 1.25rem;
+  color: #716D64;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.faq-item {
+  border: 1px solid #D1B9B4;
+  background-color: #ffffff;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 24px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: #FAF8F6;
+}
+
+.faq-question svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-question svg.rotated {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 24px 24px 24px;
+  border-top: 1px solid #D1B9B4;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #716D64;
+  margin: 24px 0 0 0;
+}
+
+.faq-contact {
+  text-align: center;
+  padding: 60px 40px;
+  border: 1px solid #D1B9B4;
+  background-color: #ffffff;
+}
+
+.faq-contact-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444444;
+  margin: 0 0 16px 0;
+}
+
+.faq-contact-text {
+  font-size: 16px;
+  color: #716D64;
+  margin: 0 0 24px 0;
+}
+
+.faq-contact-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #444444;
+  color: #FAF8F6;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.faq-contact-btn:hover {
+  background-color: #716D64;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .faq-page-content {
+    padding: 40px 30px 60px;
+  }
+  
+  .faq-page-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .faq-page-content {
+    padding: 30px 20px 40px;
+  }
+  
+  .faq-page-title {
+    font-size: 2rem;
+  }
+  
+  .faq-question {
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .faq-answer {
+    padding: 0 20px 20px 20px;
+  }
+}
+

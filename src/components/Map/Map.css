@@ -1,0 +1,76 @@
+.map-section {
+  width: 100%;
+  background-color: #FAF8F6;
+  padding: 0;
+  position: relative;
+}
+
+.map-container {
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.find-us-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #9B997B;
+  color: #FAF8F6;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.find-us-button:hover {
+  background-color: #716D64;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .map-container {
+    height: 400px;
+  }
+  
+  .find-us-button {
+    top: 15px;
+    left: 15px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  .map-container {
+    height: 350px;
+  }
+  
+  .find-us-button {
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+

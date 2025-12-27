@@ -5,6 +5,7 @@ import Stats from '../Stats/Stats';
 import Services from '../Services/Services';
 import Products from '../Products/Products';
 import AboutUs from '../AboutUs/AboutUs';
+import Map from '../Map/Map';
 import Footer from '../Footer/Footer';
 import './Home.css';
 
@@ -17,6 +18,7 @@ const Home = () => {
       <Services />
       <Products />
       <AboutUs />
+      <Map />
       <Footer />
     </div>
   );
