@@ -1,0 +1,36 @@
+.category-section {
+  width: 100%;
+  padding: 80px 60px;
+  background-color: #FAF8F6;
+}
+
+.category-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 968px) {
+  .category-section {
+    padding: 60px 40px;
+  }
+  
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-section {
+    padding: 40px 20px;
+  }
+  
+  .category-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+

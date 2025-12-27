@@ -1,0 +1,173 @@
+.services {
+  width: 100%;
+  background-color: #FAF8F6;
+  padding: 100px 60px;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Panel */
+.services-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.services-label {
+  font-size: 12px;
+  color: #716D64;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.service-arrow {
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+
+.service-arrow svg {
+  display: block;
+}
+
+.service-content {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex: 1;
+}
+
+.service-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #444444;
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.service-number {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #716D64;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.services-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-image-small {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.service-image-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-description {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #716D64;
+  margin: 0;
+  max-width: 500px;
+}
+
+/* Right Panel */
+.services-right {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.services-main-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.services-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .service-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .services {
+    padding: 80px 40px;
+  }
+  
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .services-right {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+  
+  .services-main-image {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 60px 20px;
+  }
+  
+  .service-title {
+    font-size: 2rem;
+  }
+  
+  .service-number {
+    font-size: 1rem;
+  }
+  
+  .services-description {
+    font-size: 1.1rem;
+  }
+}
+
